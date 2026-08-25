@@ -50,10 +50,7 @@ func New(path string) (*Store, error) {
 func (s *Store) Snapshot() model.Snapshot {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
-	b, _ := json.Marshal(s.data)
-	var c model.Snapshot
-	_ = json.Unmarshal(b, &c)
-	return c
+	return CloneSnapshot(s.data)
 }
 func (s *Store) SaveSnapshot(d model.Snapshot) error {
 	s.mu.Lock()
