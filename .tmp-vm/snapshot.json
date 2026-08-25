@@ -1,0 +1,40 @@
+{
+  "batches": {
+    "batch-4742397888bf2ff1": {
+      "id": "batch-4742397888bf2ff1",
+      "title": "t",
+      "showcase_ids": [
+        "A",
+        "B"
+      ],
+      "collector": "保管员",
+      "window_start": "2026-08-25T00:00:00Z",
+      "window_end": "2026-08-25T02:00:00Z",
+      "status": "采集中",
+      "risk_level": "低",
+      "revision": 2,
+      "created_at": "2026-08-25T02:08:29.272469287Z",
+      "material": "通用",
+      "current_rule_version": "env-v1.2"
+    }
+  },
+  "observations": {
+    "obs-fe95bb3feaf72866": {
+      "id": "obs-fe95bb3feaf72866",
+      "batch_id": "batch-4742397888bf2ff1",
+      "showcase_id": "A",
+      "recorded_at": "2026-08-25T00:00:00Z",
+      "temperature_celsius": 20,
+      "relative_humidity": 50,
+      "lux": 20,
+      "duration_minutes": 1,
+      "notes": "",
+      "photo_refs": [],
+      "risk_flags": null,
+      "risk_reasons": null,
+      "risk_level": "低",
+      "rule_version": "env-v1.2"
+    }
+  },
+  "tasks": {}
+}
